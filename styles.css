@@ -1,0 +1,107 @@
+/* 基本设置 */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: 'Microsoft YaHei', Arial, sans-serif; 
+}
+
+/* 导航栏样式 */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-link {
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+#toggle-theme {
+  border: none;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+#toggle-theme:hover {
+  background-color: #0056b3;
+}
+
+/* 标题样式 */
+header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* 文章卡片样式 */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.card-text {
+  color: #555;
+}
+
+/* 列表样式 */
+.list-group-item {
+  border: none;
+  border-radius: 5px;
+  background-color: #fdfdfd;
+  transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f0f8ff;
+}
+
+.list-group-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.list-group-item a:hover {
+  color: #007bff;
+}
+
+/* 页脚样式 */
+footer {
+  background-color: #f1f1f1;
+  color: #666;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* 响应式布局 */
+@media (max-width : 1355px ){
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+}
