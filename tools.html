@@ -6,22 +6,52 @@
   <title>AI 工具 - 个人AI知识库</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .bg-blue {
+      background-color: #0d6efd;
+    }
+    
+    .text-blue {
+      color: #0d6efd;
+    }
+    
+    .border-blue {
+      border-color: #0d6efd;
+    }
+    .nav-link:hover {
+      color: #0d6efd !important;
+    }
+    
+    .list-group-item a:hover {
+      color: #0d6efd !important;
+    }
+    .list-group-item a.text-blue {
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .list-group-item a.text-blue:hover {
+      text-decoration: underline;
+      background-color: #0d6efd25;
+      color: #0d6efd !important;
+    }
+    </style>
 </head>
 <body>
   <!-- 顶部导航栏 -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-blue">
     <div class="container-fluid">
-      <a class="navbar-brand" href=" ">AI 基础知识</a >
+      <a class="navbar-brand text-white" href="#">AI 基础知识</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">主页</a ></li>
-          <li class="nav-item"><a class="nav-link" href="articles.html">文章</a ></li>
-          <li class="nav-item"><a class="nav-link active" href="tools.html">AI工具</a ></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">关于我</a ></li>
-          <li class="nav-item"><a class="nav-link" href="visualization.html">数据可视化</a ></li>
+          <li class="nav-item"><a class="nav-link text-white" href="index.html">主页</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="articles.html">文章</a></li>
+          <li class="nav-item"><a class="nav-link active text-white" href="tools.html">AI工具</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="about.html">关于我</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="visualization.html">数据可视化</a></li>
         </ul>
       </div>
     </div>
@@ -29,29 +59,56 @@
 
   <!-- 工具列表 -->
   <div class="container mt-4">
-    <h1>推荐的 AI 工具</h1>
+    <h1 class="text-blue">推荐的 AI 工具</h1>
     <ul class="list-group">
-      <li class="list-group-item">
-        <a href="https://chat.openai.com" target="_blank">
-          <i class="fas fa-tools"></i> OpenAI ChatGPT
-        </a >
+      <li class="list-group-item bg-white border-blue">
+        <a href="https://chat.openai.com" target="_blank" class="text-blue">
+          <i class="fas fa-tools text-blue"></i> OpenAI ChatGPT
+        </a>
+        <p>是由OpenAI推出的一个基于人工智能的聊天机器人模型，它在GPT（Generative Pre-trained Transformer）基础上进行了优化以更好地处理对话。GPT是一种强大的语言处理神经网络模型，它能理解和生成非常自然的语言文本。</p>
       </li>
-      <li class="list-group-item">
-        <a href="https://colab.research.google.com" target="_blank">
-          <i class="fas fa-flask"></i> Google Colab
-        </a >
+      <li class="list-group-item bg-white border-blue">
+        <a href="https://colab.research.google.com" target="_blank" class="text-blue">
+          <i class="fas fa-flask text-blue"></i> Google Colab
+        </a>
+        <p>是谷歌提供的在线Jupyter笔记本环境，用于便捷、高效地进行模型训练、数据处理及分享研究成果。以其易用性、强大的计算能力和丰富的库支持，在机器学习、数据科学以及教育领域广受欢迎。</p>
       </li>
-      <li class="list-group-item">
-        <a href="https://huggingface.co" target="_blank">
-          <i class="fas fa-brain"></i> Hugging Face
-        </a >
+      <li class="list-group-item bg-white border-blue">
+        <a href="https://github.com/copilot" target="_blank" class="text-blue">
+          <i class="fab fa-github text-blue"></i> GitHub Copilot
+        </a>
+        <p>是一款 AI编码助手，它使用人工智能算法来帮助用户快速生成代码，包括函数、类和注释,可以帮助使用者更快、更轻松地编写代码，从而让使用者将更多精力集中在解决问题和协作上。</p>
+      </li>
+      <li class="list-group-item bg-white border-blue">
+        <a href="https://www.notion.com/" target="_blank" class="text-blue">
+          <i class="fas fa-book text-blue"></i> Notion
+        </a>
+        <p>一个AI工具，可以快速创建、编辑和分享文档。它使用人工智能算法来帮助用户快速生成文档，包括标题、段落、表格和图片。</p>
+      </li>
+      <li class="list-group-item bg-white border-blue">
+        <a href="https://www.autodraw.com/" target="_blank" class="text-blue">
+          <i class="fas fa-brain text-blue"></i> AutoDraw
+        </a>
+        <p>一个AI绘画工具，用户简单涂鸦后，AI便能识别并优化图像，将其完善为清晰的图形或符号,对于需要快速绘图但没有设计基础的用户尤为友好。同时可以快速创建、编辑和分享矢量图。它使用人工智能算法来帮助用户快速生成矢量图，包括线条、形状和文本。</p>
+      </li>
+      <li class="list-group-item bg-white border-blue">
+        <a href="https://www.midjourney.com/home" target="_blank" class="text-blue">
+          <i class="fas fa-robot text-blue"></i> MidJourney
+        </a>
+        <p>一个AI生成图像的工具，允许用户仅通过输入关键词，就可以生成独特的艺术作品。无论是模拟特定艺术家的风格，还是应用摄影技巧，Midjourney都能精准呈现。</p>
+      </li>
+      <li class="list-group-item bg-white border-blue">
+        <a href="https://kimi.moonshot.cn/" target="_blank" class="text-blue">
+          <i class="fas fa-graduation-cap text-blue"></i> Kimi
+        </a>
+        <p>国内顶尖的大模型之一，以其卓越的长文本处理能力闻名。无论是处理复杂数据、分析市场趋势，还是撰写专业报告，Kimi都能游刃有余。</p>
       </li>
     </ul>
   </div>
 
   <!-- 页脚 -->
-  <footer class="text-center py-3 bg-light">
-    <p>&copy; 2024 个人AI知识库</p >
+  <footer class="text-center py-3 bg-blue">
+    <p class="text-white">&copy; 2024 个人AI知识库</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
