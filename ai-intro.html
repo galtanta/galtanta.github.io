@@ -6,55 +6,118 @@
   <title>AI简介 - Personal AI 知识文章</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* 蓝色和白色的主色调 */
+body {
+  background-color: #f8f9fa; /* 浅灰色背景 */
+  color: #004080; /* 深蓝色文字 */
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  background-color: #007bff !important; /* 蓝色导航栏 */
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !important;
+}
+
+footer {
+  background-color: #007bff !important; /* 蓝色页脚 */
+  color: white;
+}
+
+.text-blue {
+  color: #007bff !important;
+}
+
+.list-group-item {
+  background-color: white;
+  border-color: #007bff;
+  margin-bottom: 10px;
+}
+
+.example-section {
+  background-color: #e6f7ff; /* 浅蓝色背景 */
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+  </style>
 </head>
 <body>
   <!-- 顶部导航栏 -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href=" ">AI基础知识</a >
+      <a class="navbar-brand" href=" ">AI基础知识</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">主页</a ></li>
-          <li class="nav-item"><a class="nav-link" href="articles.html">文章</a ></li>
-          <li class="nav-item"><a class="nav-link" href="tools.html">AI工具</a ></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">关于我</a ></li>
-          <li class="nav-item"><a class="nav-link" href="visualization.html">数据可视化</a ></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">主页</a></li>
+          <li class="nav-item"><a class="nav-link" href="articles.html">学习</a></li>
+          <li class="nav-item"><a class="nav-link" href="tools.html">AI工具</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">关于我</a></li>
+          <li class="nav-item"><a class="nav-link" href="visualization.html">数据可视化</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- 文章内容 -->
-<div class="container mt-4 mx-auto" style="max-width: 800px;">
-  <h1>AI简介</h1>
-  <p>人工智能（AI）是一门研究如何使计算机执行通常需要人类智能才能完成的任务的科学和技术。这些任务包括学习、推理、自我修正和感知环境。AI的应用范围广泛，从自动驾驶汽车到智能家居系统，从医疗诊断到金融服务。</p>
-  <p>AI可以分为两大类：狭义AI（或弱AI）和广义AI（或强AI）。狭义AI专注于执行特定任务，而广义AI则具备人类般的通用智能。</p>
-</div>
-<div class="text-center">
-  <li class="list-group-item bg-white border-blue">
-    <a href="https://news.sina.com.cn/2024-12-20/doc-ineachkp9000055.shtml" target="_blank" class="text-blue">
-      <i class="fas fa-external-link-alt me-2"></i> 全面拥抱AI-Native，2024创原会年度技术峰会成功举办</a>
-  </li>
-</div>
-<div class="text-center">
-  <li class="list-group-item bg-white border-blue">
-    <a href="https://yiqinfu.zhubai.love/posts/2215048291195326464" target="_blank" class="text-blue">
-      <i class="fas fa-external-link-alt me-2"></i>AI时代的文献搜索、总结工具</a>
-  </li>
-</div>
-<div class="text-center">
-  <li class="list-group-item bg-white border-blue">
-    <a href="https://www.nature.com/articles/d41586-023-01273-w" target="_blank" class="text-blue">
-      <i class="fas fa-external-link-alt me-2"></i>AI science search engines are exploding in number — are they any good?</a>
-  </li>
-</div>
-<!-- 页脚 -->
-<footer class="text-center py-3 bg-light">
-  <p>&copy; 2024个人AI知识库</p>
-</footer>
+  <div class="container mt-4 mx-auto" style="max-width: 800px;">
+    <h1>AI简介</h1>
+    <p>人工智能（AI）是一门研究如何使计算机执行通常需要人类智能才能完成的任务的科学和技术。这些任务包括学习、推理、自我修正和感知环境。AI的应用范围广泛，从自动驾驶汽车到智能家居系统，从医疗诊断到金融服务。</p>
+    <p>AI可以分为两大类：狭义AI（或弱AI）和广义AI（或强AI）。狭义AI专注于执行特定任务，而广义AI则具备人类般的通用智能。</p>
+  </div>
+
+  <!-- 例文栏位 -->
+  <div class="container example-section mt-4 mx-auto" style="max-width: 800px;">
+    <h2>例文推荐</h2>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <a href="https://news.sina.com.cn/2024-12-20/doc-ineachkp9000055.shtml" target="_blank" class="text-blue">
+          <i class="fas fa-external-link-alt me-2"></i>《全面拥抱AI-Native，2024创原会年度技术峰会成功举办》
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="https://yiqinfu.zhubai.love/posts/2215048291195326464" target="_blank" class="text-blue">
+          <i class="fas fa-external-link-alt me-2"></i>《AI时代的文献搜索、总结工具》
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="https://www.nature.com/articles/d41586-023-01273-w" target="_blank" class="text-blue">
+          <i class="fas fa-external-link-alt me-2"></i>《AI 科学搜索引擎的数量呈爆炸式增长，它们有什么好处吗?》
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="https://arxiv.org/abs/2312.10077?utm_source=chatgpt.com" target="_blank" class="text-blue">
+          <i class="fas fa-external-link-alt me-2"></i>《人工智能在社会科学中的应用：基于文献计量学的研究》
+        </a>
+      </li>
+      <li class="list-group-item">
+        <a href="https://arxiv.org/abs/2104.11067?utm_source=chatgpt.com" target="_blank" class="text-blue">
+          <i class="fas fa-external-link-alt me-2"></i>《人工智能，何去何从？》
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="text-center py-3 bg-light">
+    <p>&copy; 2024个人AI知识库</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
