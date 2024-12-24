@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 使用人数数据可视化</title>
+  <link rel="stylesheet" href="styles.css"> <!-- 自定义样式 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"> <!-- Bootstrap -->
+</head>
+<body>
+  <!-- 顶部导航栏 -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href=" ">AI 基础知识</a >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">主页</a ></li>
+          <li class="nav-item"><a class="nav-link" href="articles.html">文章</a ></li>
+          <li class="nav-item"><a class="nav-link" href="tools.html">AI工具</a ></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">关于我</a ></li>
+          <li class="nav-item"><a class="nav-link active" href="visualization.html">数据可视化</a ></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 内容区域 -->
+  <div class="container mt-4">
+    <header class="text-center mb-5">
+      <h1>AI 使用人数数据可视化</h1>
+      <p class="text-muted">通过柱状图分析各月份的 AI 用户增长情况。</p >
+    </header>
+    <div class="row">
+      <!-- 左侧内容 -->
+      <div class="col-lg-6">
+        <h2>数据描述</h2>
+        <p>以下柱状图展示了 2024 年上半年各月份的 AI 使用人数。</p >
+        <ul class="list-group mb-3">
+          <li class="list-group-item">可视化库：Chart.js</li>
+          <li class="list-group-item">数据来源：蔚承</li>
+          <li class="list-group-item">适用场景：用户增长趋势分析</li>
+        </ul>
+      </div>
+      <!-- 右侧内容 -->
+      <div class="col-lg-6">
+        <h2>柱状图</h2>
+        <canvas id="userChart" width="400" height="300"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <!-- 页脚 -->
+  <footer class="text-center py-3 bg-light mt-5">
+    <p>&copy; 2024个人AI知识库|使用Bootstrap构建</p >
+  </footer>
+
+  <!-- Bootstrap 和 JavaScript 依赖 -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const ctx = document.getElementById('userChart').getContext('2d');
+    const userChart = new Chart(ctx, {
+      type: 'bar', // 图表类型
+      data: {
+        labels: ['ChatGPT', 'Google Gemini', 'Claude', 'Canva', 'DeepL', 'Character AI'], // X轴标签
+        datasets: [{
+          label: 'AI软件每月流量（单位：百万）',
+          data: [3100, 267.8, 88.7, 841.3, 303.5, 220.2], // 数据值
+          backgroundColor: [
+            'rgba(75, 192, 192, 0.2)',
+            'rgba(54, 162, 235, 0.2)',
+            'rgba(255, 206, 86, 0.2)',
+            'rgba(153, 102, 255, 0.2)',
+            'rgba(255, 159, 64, 0.2)',
+            'rgba(255, 99, 132, 0.2)'
+          ],
+          borderColor: [
+            'rgba(75, 192, 192, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)',
+            'rgba(255, 99, 132, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            position: 'top',
+          },
+          title: {
+            display: true,
+            text: '2024 年上半年 AI软件每月流量'
+          }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: '每月流量（百万）'
+            }
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
